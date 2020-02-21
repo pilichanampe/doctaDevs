@@ -1,0 +1,22 @@
+elementos interactivos
+<a>
+    target="ventana de destino"
+    href="direccion a la que vinculamos"
+
+<form></form>
+    permite crear formularios con campos de diversos tipos en nuestra pag web.
+
+    action="dirección de backend que procesa"
+    novalidate="directiva para ignorar validaciones".
+
+
+<input>
+    permite crear campos en nuestros formularios.
+    type=" text | number \ email \ url \ phone \ button \ checkbox \ radio \ date \ time "
+
+
+    TEORICO
+    Investigar que comportamietnos puede tener cada tipo de input (longitud axim, que sera repetido, etc)
+
+    PRACTICO
+    implementar el formulario de la landing page.
