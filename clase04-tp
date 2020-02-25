@@ -42,3 +42,16 @@ target
         _parent: Carga la respuesta en el marco padre del marco actual en HTML 4 o en el contexto de navegación padre del marco actual en HTML5. Si no hay marco padre, esta opción se comporta de la misma manera que _self.
         _top: HTML 4: Carga la respuesta en toda la ventana original, cancelando otros marcos.  HTML5: Carga la respuesta en el contexto de navegación de más alto nivel (esto es, el contexto de navegación que es ancestro del actual, y no tiene padre). Si no hay padre, esta opción se comporta igual que _self.
         HTML5: Este valor puede ser sobreescrito por un atributo formtarget en un elemento <button> o<input>.
+
+<input>
+    Se utiliza para crear controles interactivos para formularios basados en la web, que reciban datos del usuario. La forma en que <input> funciona varía considerablemente dependiendo del valor de su atributo type.
+    Algunos de sus atributos globales:
+        - button: botón sin un comportamiento específico.
+        - checkbox: Casilla de selección. Se debe usar el atributo value para definir el valor que se enviará por este elemento. Se utiliza el atributo checked para indicar si el elemento está seleccionado. También se puede utilizar el atributo indeterminate (el cual solo se puede establecer programáticamente) para indicar que la casilla está en un estado indeterminado (en la mayoría de las plataformas, se dibuja una línea horizontal a través de la casilla).
+        - color: HTML5 - control para especificar un color. Una interfaz de selección de color no requiere más funcionalidad que la de aceptar colores simples como texto.
+        - date: HTML5 -  control para introducir una fecha (año, mes y día, sin tiempo).
+        - datetime-local: HTML5 - Control para introducir fecha y hora, sin zona horaria específica.
+        - email: HTML5 - Campo para introducir una dirección de correo electrónico. Las pseudoclases :valid e :invalid son aplicadas según corresponda.
+        - file: control que permite al usuario seleccionar un archivo. Se puede utilizar el atributo accept para definir los tipos de archivos que el control podrá seleccionar.
+        - hidden: control que no es mostrado en pantalla, pero cuyo valor es enviado al servidor.
+        - image: botón de envío de formulario con gráfico.
