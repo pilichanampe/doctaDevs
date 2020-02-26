@@ -1,0 +1,28 @@
+como se puede publicar una web
+nic -- organismo nacional que trata los dominios en la republica argentina
+
+servidor -- almacen de informacion
+
+el navegador tiene un motor de renderizado para poder mostrar y que se vea el html
+
+link -- etiqueta para cargar css
+script -- etiqueta para cargar js
+
+
+front end -- todo lo que tenga que ver con la experiencia de usuario, "lo que se ve en el navegador"
+
+back end -- "los servidores" todo lo que el front end necesita para mostrarse. 
+
+apis -- application programming interface, es una via de comunicación entre sistemas.
+
+datos -- la informacion que guardamos y que el usuario ingresa en nuestra página.
+
+que es GIT
+    git quiere decir persona desagradable... jaja, 
+
+    1- inicializamos repositorio en consola --> git init
+    2- agregamos archivos, --> git add
+        en visual studio --> se agrega con el simbolo +
+    3- Mensaje de confirmación --> git commit -m "mensajito"
+
+    

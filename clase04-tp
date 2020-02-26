@@ -1,0 +1,57 @@
+Texto para la actividad teórico práctica
+Investigar sobre form, input, textarea, select y button.
+
+
+form
+El elemento HTML form (<form>) representa una sección de un documento que contiene controles interactivos que permiten a un usuario enviar información a un servidor web.
+
+Es posible usar las pseudo-clasess de CSS :valid e :invalid  para darle estilos a un elemento form.
+
+Algunos atributos que son soportados por la etiqueta form:
+
+autocomplete
+    indica cuáles de los controles en este formulario puede tener sus valores automáticamente completados por el navegador. Esta configuración puede ser sobreescrita por un atributo autocomplete en un elemento que pertenezca al formulario:
+        off: el usuario debe ingresar explícitamente cada valor dentro de cada campo por cada uso, o el documento provee su propio método de autocompletado: el navegador no autocompleta las entradas.
+        on: el navegador puede completar automáticamente valores basados en lo que el usuario ha ingresado durante entradas previas al formulario.
+
+enctype
+    Cuando el valor del atributo method is post, este atributo es el tipo MIME del contenido que es usado para enviar el formulario al servidor.
+    Los posibles valores son:
+        - application/x-www-form-urlencoded: El valor por defecto si un atributo no está especificado.
+        - multipart/form-data: Usar este valor si se está usando el elemento <input> con el atributo type ajustado a "file".
+        - text/plain (HTML5)
+    Este valor puede ser sobreescrito por un atributoformenctypeen un <button> o un elemento <input>.
+
+method 
+    El método HTTP que el navegador usa para enviar el formulario. Valores posibles son: 
+        post: corresponde al método POST HTTP; los datos del formulario son incluidos en el cuerpo del formulario y son enviados al servidor.
+        get: corresponde al método GET HTTP; los datos del formulario son adjuntados a la URI del atributo action, con un '?' como separador, y la URI resultante es enviada al servidor. Use este método cuando el formulario no tiene efectos secundarios y contiene solo caracteres ASCII.
+
+        Este valor puede ser sobreescrito por un atributo formmethod en un  <button> o elemento <input>.
+
+name
+    El nombre del formulario. 
+
+novalidate
+    Este atributo booleano indica que el formulario no es validado cuando es enviado. Si el atributo no existe formnovalidate en un <button> o en un <input> que pertenece al formulario.
+
+target
+    Un nombre o keyword indicando dónde mostrar la respuesta que es recibida después de enviar el formulario. 
+        _self: Carga la respuesta dentro del mismo frame HTML 4 (o en HTML5, contexto de navegación) como el marco actual. Este valor es por defecto si el atributo no es especificado.
+        _blank: Carga la respuesta dentro de una nueva ventana sin nombre en HTML 4 o un contexto de navegación en HTML5.
+        _parent: Carga la respuesta en el marco padre del marco actual en HTML 4 o en el contexto de navegación padre del marco actual en HTML5. Si no hay marco padre, esta opción se comporta de la misma manera que _self.
+        _top: HTML 4: Carga la respuesta en toda la ventana original, cancelando otros marcos.  HTML5: Carga la respuesta en el contexto de navegación de más alto nivel (esto es, el contexto de navegación que es ancestro del actual, y no tiene padre). Si no hay padre, esta opción se comporta igual que _self.
+        HTML5: Este valor puede ser sobreescrito por un atributo formtarget en un elemento <button> o<input>.
+
+<input>
+    Se utiliza para crear controles interactivos para formularios basados en la web, que reciban datos del usuario. La forma en que <input> funciona varía considerablemente dependiendo del valor de su atributo type.
+    Algunos de sus atributos globales:
+        - button: botón sin un comportamiento específico.
+        - checkbox: Casilla de selección. Se debe usar el atributo value para definir el valor que se enviará por este elemento. Se utiliza el atributo checked para indicar si el elemento está seleccionado. También se puede utilizar el atributo indeterminate (el cual solo se puede establecer programáticamente) para indicar que la casilla está en un estado indeterminado (en la mayoría de las plataformas, se dibuja una línea horizontal a través de la casilla).
+        - color: HTML5 - control para especificar un color. Una interfaz de selección de color no requiere más funcionalidad que la de aceptar colores simples como texto.
+        - date: HTML5 -  control para introducir una fecha (año, mes y día, sin tiempo).
+        - datetime-local: HTML5 - Control para introducir fecha y hora, sin zona horaria específica.
+        - email: HTML5 - Campo para introducir una dirección de correo electrónico. Las pseudoclases :valid e :invalid son aplicadas según corresponda.
+        - file: control que permite al usuario seleccionar un archivo. Se puede utilizar el atributo accept para definir los tipos de archivos que el control podrá seleccionar.
+        - hidden: control que no es mostrado en pantalla, pero cuyo valor es enviado al servidor.
+        - image: botón de envío de formulario con gráfico.
