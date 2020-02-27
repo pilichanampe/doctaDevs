@@ -1,0 +1,13 @@
+clase 05 27/02 jueves
+
+<form>
+permite crear formularios con campos de diversos tipos en nuestra página web.
+acttion="dirección de backend que procesa"
+
+
+control de formulario.
+    algo con lo que el usuario puede interactuar
+
+    <form> es la etiqueta que agrupa, contiene todo lo que va a pertenecer a un formulario.
+
+<label for="nombre"></label> --> el for sirve para enlazar con el name, para que el navegador sepa para qué es.

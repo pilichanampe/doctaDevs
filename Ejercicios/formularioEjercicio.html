@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio sobre formularios</title>
+        <meta name="description" content="Esta es mi primera práctica del curso.">
+    </head>
+    <body>
+       <form action="">
+           <label for="nombre">Nombre:</label>
+           <input required name="nombre" type="text">
+           <br>
+           <label for="apellido">Apellido:</label>
+           <input name="apellido" type="text">
+           <br>
+           <label for="email">Email:</label>
+           <input required name="email" type="email">
+           <br>
+           <label for="genero">Género:</label>
+           <input type="radio" value="femenino" name="genero">Femenino
+           <input type="radio" value="masculino" name="genero">Masculino
+           <input type="radio" value="otros" name="genero">Otros
+           <input type="radio" value="orefiero no decirlo" name="genero">Prefiero no decirlo
+           <br>
+
+           <label for="origen_visita">Cómo llegó a nuestra página?</label>
+           <input type="checkbox" value="RA" name="origen_visita">Referidos/Amigos
+           <input type="checkbox" value="P" name="origen_visita">Publicidad
+           <input type="checkbox" value="RS" name="origen_visita">Redes sociales
+           <input type="checkbox" value="O" name="origen_visita">Otros
+           <br>
+           <select name="provincia" id="">
+               <option value="CBA">Córdoba</option>
+               <option value="TF">Tierra del Fuego</option>
+               <option value="BA">Buenos Aires</option>
+               <option value="CBA">Córdoba</option>
+               <option value="TF">Tierra del Fuego</option>
+               <option value="BA">Buenos Aires</option>
+               <option value="CBA">Córdoba</option>
+               <option value="TF">Tierra del Fuego</option>
+               <option value="BA">Buenos Aires</option>
+               <option value="CBA">Córdoba</option>
+               <option value="TF">Tierra del Fuego</option>
+               <option value="BA">Buenos Aires</option>
+           </select>
+           <br>
+           <label for="">Mensaje</label>
+        
+           <textarea name="mensaje" placeholder="Escribí acá tu mensaje" id="" cols="80" rows="10"></textarea>
+
+
+           <button type="submit" name="enviar">Enviar</button>
+
+
+
+       </form>
+        
+    </body>
+</html>
