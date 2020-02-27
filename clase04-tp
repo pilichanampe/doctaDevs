@@ -46,6 +46,8 @@ target
 <input>
     Se utiliza para crear controles interactivos para formularios basados en la web, que reciban datos del usuario. La forma en que <input> funciona varía considerablemente dependiendo del valor de su atributo type.
     Algunos de sus atributos globales:
+
+    type: El tipo de control a mostrar. Su valor predeterminado es text, si no se especifica este atributo. Los posibles valores son:
         - button: botón sin un comportamiento específico.
         - checkbox: Casilla de selección. Se debe usar el atributo value para definir el valor que se enviará por este elemento. Se utiliza el atributo checked para indicar si el elemento está seleccionado. También se puede utilizar el atributo indeterminate (el cual solo se puede establecer programáticamente) para indicar que la casilla está en un estado indeterminado (en la mayoría de las plataformas, se dibuja una línea horizontal a través de la casilla).
         - color: HTML5 - control para especificar un color. Una interfaz de selección de color no requiere más funcionalidad que la de aceptar colores simples como texto.
@@ -55,3 +57,103 @@ target
         - file: control que permite al usuario seleccionar un archivo. Se puede utilizar el atributo accept para definir los tipos de archivos que el control podrá seleccionar.
         - hidden: control que no es mostrado en pantalla, pero cuyo valor es enviado al servidor.
         - image: botón de envío de formulario con gráfico.
+        - month: HTML5 - Control para introducir un mes y año, sin zona horaria específica.
+        - radio: botón radio.
+        - range: HTML5 - Control para introducir un número cuyo valor exacto no es importante. Este control usa los siguientes valores predeterminados si no se especifica cada atributo:
+            min: 0
+            max: 100
+            value: min + (max - min) / 2, o min si max es menor que min
+            step: 1
+        - reset: Botón que restaura los contenidos de un formulario a sus valores predeterminados.
+        - search: HTML5 Cuadro de texto de línea simple para introducir textos de búsqueda. Los saltos de línea son eliminados automáticamente del valor introducido.
+        - submit: Botón que envía el formulario.
+        - tel: HTML5 Control para introducir un número telefónico. Los saltos de línea son eliminados automáticamente del valor introducido, pero no hay otra sintaxis forzada. Se pueden usar atributos como pattern y maxlength para restringir los valores introducidos en este control. Las pseudo-clases CSS :valid y :invalid son aplicadas segun corresponda.
+        - text: Campo de texto de línea simple. Los saltos de línea son eliminados automáticamente del valor introducido.
+
+    accept: type
+        El tipo de control a mostrar. Su valor predeterminado es text, si no se especifica este atributo. Los posibles valores son:
+    autocomplete:
+        Este atributo indica si el valor del control puede ser completado automáticamente por el navegador.
+
+        Los valores posibles son:
+            - off: El usuario debe explícitamente introducir un valor en este campo para cualquier uso, o el documento provee su propio método de auto-completado. El navegador no completa automáticamente lo introducido.
+            on: Se permite al navegador completar automáticamente el valor basado en los valores que se han introducido previamente. Sin embargo, on no provee mayor información sobre qué clase de datos podría esperar el usuario introducir.
+            name: Nombre completo.
+            honorific-prefix: Prefixo o título (Ejemplos: "Sr.", "Sra.", "Dr.", "Srita.").
+            given-name: Nombre de pila.
+            additional-name: Segundo nombre.
+            family-name: Apellido.
+            honorific-suffix: Sufijo (Ejemplos: "Hijo", "Señor", "II").
+            nickname: Apodo.
+            email: Correo electrónico.
+            username: Nombre de usuario.
+            new-password: Nueva contraseña (por ejemplo, al crear una cuenta o cambiar la contraseña).
+            current-password: Contraseña actual.
+            organization-title: Título de organización (Ejemplos: "Ingeniero de Software", "Vicepresidente", "Director General Adjunto").
+            organization: Organización.
+            street-address: Calle (en dirección).
+            address-line1, address-line2, address-line3, address-level4, address-level3, address-level2, address-level1: Valores para dirección.
+            country: País.
+            country-name: Nombre del país.
+            postal-code: Código postal.
+            cc-name: Nombre completo en un instrumento de pago.
+            cc-given-name: Nombre de pila en un instrumento de pago.
+            cc-additional-name: Segundo nombre en un instrumento de pago.
+            cc-family-name: Apellido en un instrumento de pago.
+            cc-number: Código de identificación de un instrumento de pago(por ejemplo, el número de tarjeta de crédito).
+            cc-exp: Fecha de expiración de un instrumento de pago.
+            cc-exp-month: Mes de expiración en un instrumento de pago.
+            cc-exp-year: Año de expiración en un instrumento de pago.
+            cc-csc: Código de seguridad en un instrumento de pago.
+            cc-type: Tipo de instrumento de pago (por ejemplo, Visa).
+            transaction-currency: Tipo de moneda de la transacción.
+            transaction-amount: Monto de la transacción.
+            language: Idioma preferido, etiqueta BCP 47 válida.
+            bday: Fecha de cumpleaños.
+            bday-day: Día de cumpleaños.
+            bday-month: Mes de cumpleaños.
+            bday-year: Año de cumpleaños.
+            sex: Sexo (ejemplos, Femenino, Female, Fa'afafine), texto libre, sin líneas nuevas.
+            tel: Teléfono.
+            url: Dirección web correspondiente a la compañía, persona, dirección o información de contacto en los demás campos asociados a éste.
+            photo: Fotografía, ícono u otra imagen correspondiente a la compañía, persona, dirección o información de contacto en los otros campos asociados a éste.
+
+            checked
+            Cuando el valor del atributo type es radio o checkbox, la presencia de este atributo Booleano indica que el control está seleccionado de forma predeterminada. De lo contrario, será ignorado.
+
+            max HTML5
+            El valor máximo (numérico o fecha-hora) para este elemento, el cual no debe ser menor que su valor mínimo (atributo min).
+
+            maxlength
+            Si el valor del atributo type es text, email, search, password, tel, o url, este atributo especifica el número máximo de caracteres (en puntos de código Unicode) que el usuario puede introducir. Para los otros tipos de control, es ignorado. Puede exceder el valor del atributo size. Si no se especifica, el usuario puede introducir una cantidad ilimitada de caracteres. Especificar un número negativo resulta en el comportamiento predeterminado (es decir, el usuario puede introducir una cantidad ilimitada de caracteres). La restricción es evaluada sólo cuando el valor del atributo ha sido modificado.
+
+            min HTML5
+            El valor mínimo (numérico o fecha-hora) para este elemento, el cual no debe ser mayor a su valor máximo (atributo max).
+            minlength HTML5
+            Si el valor del atributo type es text, email, search, password, tel, o url, este atributo especifica la longitud mínima de caracteres (en puntos de código Unicode) que el usuario puede introducir. Para los otros tipos de control, es ignorado.
+
+            multiple HTML5
+            Este atributo Booleano indica si el usuario puede introducir más de un valor. Este atributo aplica cuando el atributo type es email o file, y en caso contrario es ignorado.
+
+            pattern HTML5
+            Una expresión regular contra la que el valor es evaluado. El patrón debe coincidir con el valor completo, no solo una parte. Se puede usar el atributo title para describir el patrón como ayuda al usuario. Este atributo aplica cuando el atributo type es text, search, tel, url, email, o password, y en caso contrario es ignorado.
+
+            required HTML5
+            Este atributo especifica que el usuario debe llenar el control antes de enviarlo al formulario. No puede ser usado cuando el atributo type es hidden, image, o de tipo botón (submit, reset, o button). Las pseudo-clases :optional y :required se aplicarán al campo según sea apropiado.
+
+            spellcheck HTML5
+            Si se establece este atributo con valor true, se está indicando que se debe revisar la ortografía y gramática del elemento. El valor default indica que el elemento va a actuar acorde al comportamiento predeterminado del navegador, posiblemente basado en el valor del atributo spellcheck de su elemento padre. El valor false indica que el elemento no debe ser revisado.
+
+
+
+            TEXTAREA
+            El elemento HTML <textarea> representa un control para edición muti-línea de texto plano.
+            autocomplete HTML5
+            Este atributo indica si el valor del control puede ser completado automáticamente por el navegador. Los posibles valores son:
+            off: El usuario debe explícitamente introducir el valor del campo para cada uso, o el documento proporciona su propio método de auto-completado; el navegador no completa automáticamente.
+            on: El navegador puede completar automáticamente el valor basándose en valores que el usuario haya insertado durante usos previos.
+
+            cols
+            La anchura visible del control de texto, en caracteres de anchura media. Si está definido debe ser positivo. Si no, por defecto, el valor es 20 (HTML 5).
+            
+            
