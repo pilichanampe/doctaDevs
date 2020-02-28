@@ -11,3 +11,11 @@ control de formulario.
     <form> es la etiqueta que agrupa, contiene todo lo que va a pertenecer a un formulario.
 
 <label for="nombre"></label> --> el for sirve para enlazar con el name, para que el navegador sepa para qué es.
+
+aria --> etiquetas de accesibilidad
+aria-label ==> permite a una etiqueta decirle cómo un lector de pantallas se tiene que comportar con esa etiqueta
+role --> buscar
+
+TERMINAR EL PRACTICO PARA EL MARTES
+
+
