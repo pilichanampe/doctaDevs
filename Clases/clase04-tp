@@ -156,4 +156,53 @@ target
             cols
             La anchura visible del control de texto, en caracteres de anchura media. Si está definido debe ser positivo. Si no, por defecto, el valor es 20 (HTML 5).
             
-            
+                        form HTML5
+            El formulario al cual el elemento textarea está asociado (el propietario del formulario). El valor del atributo debe ser un ID de un elemento formulario del mismo documento. Si no se especifica este atributo, el textarea debe ser un descendiente de un elemento formulario. Permite colocar elementos textarea en cualquier lugar dentro de un documento, no sólo como descendientes de  formularios.
+
+            maxlength HTML5
+            Indica el número máximo de caracteres  (Unicode code points) que el usuario puede insertar. Si no está especificado entonces el usuario puede insertar un número ilimitado de caracteres.
+
+            minlength HTML5
+            El mínimo número de caracteres (Unicode code points) que el usuaurio debe insertar.
+
+            name
+            El nombre del control.
+
+            placeholder HTML5
+            Se puede añadir un indicación para el usuario que defina que se debe insertar en el control. Los retornos de carro y las nuevas líneas dentro lso marcadores de posición deben ser tratado como nuevas líneas al representar dicha indicación.
+
+            readonly
+            Este atributo booleano indica que el usuario no puede modificar el valor del control. Al contrario que el atributo disable, el atributo readonly no evita que el usuario haga click o seleccione el control. El valor del control read-only si que se envía con el formulario.
+
+            required HTML5
+            Este atributo indica que el usuario debe rellenar el contro con un valor antes de poder enviar el formulario.
+
+            rows
+            El número de líneas visibles en el control
+
+
+    SELECT
+            El elemento select (<select>) de HTML representa un control que muestra un menú de opciones. Las opciones contenidas en el menú son representadas por elementos <option>, los cuales pueden ser agrupados por elementos <optgroup>. La opcion puede estar preseleccionada por el usuario.
+
+            autofocus HTML5
+            Este atributo permite especificar un formulario de control que debería tener enfoque de entrada cuando se carga la página, a no ser que el usuario lo sobreescriba, por ejemplo, escribiendo un control diferente. Solo un elemento formulario puede tener el elemento de enfoque de entrada por documento, por lo cual es un atributo booleano.
+
+            disabled
+            El atributo booleano especifica que el usuario no puede interactuar con el control. Si este atributo no está especificado, el control hereda los ajustes del campo que lo contiene, por ejemplo del fielset; si no hay elemento contenido con el atributo disabled, entonces el control se considera enable (activado).
+
+            form HTML5
+            El elemento formulario al cual el select está asociado (su propietario del formulario). Si este atributo está especificado, su valor deberá ser el ID de un formulario en el mismo documento. Esto te permite situar elementos en cualquier parte del documento, no solo de manera descendiente con respecto a su elemento formulario.
+
+            multiple
+            Este elemento booleano indica que se pueden seleccionar múltiples opciones de la lista. Si no está especificado, solo se podrá seleccionar una opción cada vez.
+
+            name
+            El nombre del elemento de control.
+
+            required HTML5
+            Es un elemento boooleano que indica si la opcion puede quedar sin seleccionar o si es requerida.
+
+            https://www.ibiblio.org/pub/Linux/docs/LuCaS/Manuales-LuCAS/doc-curso-html/doc-curso-html/x5720.html
+            https://lenguajehtml.com/p/html/formularios/controles-campos-de-texto
+            https://www.hazunaweb.com/curso-de-html/formularios-campos-texto/
+                                    
