@@ -7,223 +7,281 @@
     </head>
     <body>
         <h1>Actividad teórico-práctica sobre formularios</h1>
-        <section>
-            <div>
-                <h2>Campos de texto</h2>
-                <p>Los campos de entrada de los formularios se definen mediante el tag <code>&ltinput&gt</code> y sus diferentes valores. Estos valores nos permiten utilizar varios tipos de cajas y de formas."</p>
-                <br>
-                <p>Para camnbiar el formato de un campo de texto, hay que hacer uso del atributo <code>type</code>, y los formatos de datos disponibles son los siguientes:</p>
+        <div>
+            <h2>La etiqueta form</h2>
+            <p>La etiqueta <code>&ltform&gt</code> se usa para crear un formulario HTML donde el usuario ingresará información.</p>
+            <p>El elemento <code>&ltform&gt</code> puede contener uno o más de los siguientes elementos de formulario:</p>
+            <ul>
+                <li><code>&ltinput&gt</code></li>
+                <li><code>&lttextarea&gt</code></li>
+                <li><code>&ltbutton&gt</code></li>
+                <li><code>&ltselet&gt</code></li>
+                <li><code>&ltoption&gt</code></li>
+                <li><code>&ltoptgroup&gt</code></li>
+                <li><code>&ltfieldset&gt</code></li>
+                <li><code>&ltlabel&gt</code></li>
+                <li><code>&ltoutput&gt</code></li>
+            </ul>
+
+        </div>
+        <div>
+            <h2>Campos de texto: input</h2>
+            <p>Los campos de entrada de los formularios se definen mediante el tag <code>&ltinput&gt</code> y sus diferentes valores. Estos valores nos permiten utilizar varios tipos de cajas y de formas."</p>
+            <br>
+            <p>Para camnbiar el formato de un campo de texto, hay que hacer uso del atributo <code>type</code>, y los formatos de datos disponibles son los siguientes:</p>
+            <ul>
+                <li>
+                    <code>&ltinput type="text"&gt</code>
+                    <p>Este tipo de campos se usan para albergar informaciones cortas y concretas.</p>
+                </li>
+                <li>
+                    <code>&ltinput type="number"&gt</code>
+                    <p>El tipo <code>number</code> es usado para permitir al usuario ingresar un número. Incluye una validación para rechazar entradas no numéricas. El navegador puede optar por proveer flechas de pasos para permitir al usuario incrementar y decrementar el valor usando su ratón o simplemente pulsando con la punta del dedo.</p>
+                </li>
+                <li>
+                    <code>&ltinput type="email"&gt</code>
+                    <p>Campo para introducir una dirección de correo electrónico. Las pseudoclases <code>:valid</code> e <code>:invalid</code> son aplicadas según corresponda.</p>
+                </li>
+                <li>
+                    <code>&ltinput type="url"&gt</code>
+                    <p>
+                        Este tipo se usa para los campos de entrada que deben contener una dirección URL.
+                        <br>
+                        Dependiendo del soporte del navegador, el campo de URL puede validarse automáticamente cuando se envía.
+                        <br>
+                        Algunos teléfonos inteligentes reconocen el tipo de url y agregan ".com" al teclado para que coincida con la entrada de url.
+                    </p>
+                </li>
+                <li>
+                    <code>&ltinput type="tel"&gt</code>
+                    <p>Se usa para campos de entrada que deben contener un número de teléfono. Puede combinarse con el atributo <code>pattern</code> para especificar una expresión regular para verificar el valor de entrada.</p>
+                </li>              
+                <li>
+                    <code>&ltinput type="checkbox"&gt</code>
+                    <p>Este campo sirve para crear casillas de verificación que le permiten al usuario seleccionar <strong>cero o más opciones</strong>  dentro un número limitado de opciones.</p>
+                </li>
+                <li>
+                    <code>&ltinput type="radio"&gt</code>
+                    <p>Son botones de opción que le permiten al usuario seleccionar <strong>solo una opción</strong>  de un número limitado de opciones.</p>
+                </li>
+                <li>
+                    <code>&ltinput type="date"&gt</code>
+                    <p>
+                        Se usa para campos de entrada que deben contener una fecha.
+                        <br>
+                        Según el soporte del navegador, puede aparecer un selector de fecha en el campo de entrada.
+                    </p>
+                </li>
+                <li>
+                    <code>&ltinput type="time"&gt</code>
+                    <p>
+                        Permite al usuario seleccionar una hora (sin zona horaria).
+                        <br>
+                        Dependiendo del soporte del navegador, puede aparecer un selector de tiempo en el campo de entrada.
+                    </p>
+                </li>
+                <li>
+                    <code>&ltinput type="datetime-local"&gt</code>
+                    <p>
+                        especifica un campo de entrada de fecha y hora, sin zona horaria.
+                        <br>
+                        Según el soporte del navegador, puede aparecer un selector de fecha en el campo de entrada.
+                    </p>
+                </li>
+                <li>
+                    <code>&ltinput type="password"&gt</code>
+                    <p>Define un campo de contraseña. Los caracteres en un campo de contraseña están enmascarados (se muestran como asteriscos o círculos).</p>
+                </li>
+                <li>
+                    <code>&ltinput type="search"&gt</code>
+                    <p>Se usa para campos de búsqueda (un campo de búsqueda se comporta como un campo de texto normal).</p>
+                </li>
+                <li>
+                    <code>&ltinput type="submit"&gt</code>
+                    <p>
+                        Define un botón para enviar datos de formulario a un controlador de formulario.
+                        <br>
+                        El controlador de formulario suele ser una página de servidor con un script para procesar datos de entrada.
+                        <br>
+                        El controlador de formulario se especifica en el atributo de acción del formulario.
+                    </p>
+                </li>
+                <li>
+                    <code>&ltinput type="reset"&gt</code>
+                    <p>Define un botón de reinicio que restablecerá todos los valores del formulario a sus valores predeterminados.</p>
+                </li>
+                <li>
+                    <code>&ltinput type="color"&gt</code>
+                    <p>
+                        Se usa para campos de entrada que deben contener un color.
+                        <br>
+                        Dependiendo de la compatibilidad del navegador, puede aparecer un selector de color en el campo de entrada.
+                    </p>
+                </li>
+                <li>
+                    <code>&ltinput type="file"&gt</code>
+                    <p>Define un campo de selección de archivo y un botón "Examinar" para cargar archivos.</p>
+                </li>
+                <li>
+                    <code>&ltinput type="hidden"&gt</code>
+                    <p>
+                        Define un campo de entrada oculto.
+                        <br>
+                        Un campo oculto permite a los desarrolladores web incluir datos que los usuarios no pueden ver ni modificar cuando se envía un formulario.
+                        <br>
+                        Un campo oculto a menudo almacena el registro de la base de datos que debe actualizarse cuando se envía el formulario.
+                    </p>
+                </li>
+                <li>
+                    <code>&ltinput type="image"&gt</code>
+                    <p>
+                        Define una imagen como un botón de enviar.
+                        <br>
+                        La ruta a la imagen se especifica en el atributo <code>src</code>.
+                    </p>
+                </li>
+                <li>
+                    <code>&ltinput type="month"&gt</code>
+                    <p>
+                        Permite al usuario seleccionar un mes y año.
+                        <br>
+                        Según el soporte del navegador, puede aparecer un selector de fecha en el campo de entrada.</p>
+                </li>              
+                <li>
+                    <code>&ltinput type="range"&gt</code>
+                    <p>Define un control para ingresar un número cuyo valor exacto no es importante (como un control deslizante). El rango predeterminado es de 0 a 100. Sin embargo, puede establecer restricciones sobre qué números se aceptan con los atributos <code>min</code>, <code>max</code> y <code>step</code>.</p>
+                </li>
+                <li>
+                    <code>&ltinput type="week"&gt</code>
+                    <p>
+                        Permite al usuario seleccionar una semana y un año.
+                        <br>
+                        Según el soporte del navegador, puede aparecer un selector de fecha en el campo de entrada.
+                    </p>
+                </li>
+            </ul>
+            <br>
+            <section>
+                <p>Aquí hay una lista de algunas restricciones de entrada comunes:</p>                                      
                 <ul>
                     <li>
-                        <code>&ltinput type="text"&gt</code>
-                        <p>Este tipo de campos se usan para albergar informaciones cortas y concretas.</p>
-                    </li>
-                    <li>
-                        <code>&ltinput type="number"&gt</code>
-                        <p>El tipo <code>number</code> es usado para permitir al usuario ingresar un número. Incluye una validación para rechazar entradas no numéricas. El navegador puede optar por proveer flechas de pasos para permitir al usuario incrementar y decrementar el valor usando su ratón o simplemente pulsando con la punta del dedo.</p>
-                    </li>
-                    <li>
-                        <code>&ltinput type="email"&gt</code>
-                        <p>Campo para introducir una dirección de correo electrónico. Las pseudoclases <code>:valid</code> e <code>:invalid</code> son aplicadas según corresponda.</p>
-                    </li>
-                    <li>
-                        <code>&ltinput type="url"&gt</code>
                         <p>
-                            Este tipo se usa para los campos de entrada que deben contener una dirección URL.
-                            <br>
-                            Dependiendo del soporte del navegador, el campo de URL puede validarse automáticamente cuando se envía.
-                            <br>
-                            Algunos teléfonos inteligentes reconocen el tipo de url y agregan ".com" al teclado para que coincida con la entrada de url.
+                            <span><code>size:</code></span> mediante el atributo <code>size</code> podemos definir el tamaño de la caja. Es decir, la apariencia de la misma. Si el texto que vamos a escribir no cabe en la caja, éste se desplazará pero sin que la caja varíe su tamaño. El texto irá desapareciendo por la izquierda.
                         </p>
                     </li>
                     <li>
-                        <code>&ltinput type="tel"&gt</code>
-                        <p>Se usa para campos de entrada que deben contener un número de teléfono. Puede combinarse con el atributo <code>pattern</code> para especificar una expresión regular para verificar el valor de entrada.</p>
-                    </li>              
-                    <li>
-                        <code>&ltinput type="checkbox"&gt</code>
-                        <p>Este campo sirve para crear casillas de verificación que le permiten al usuario seleccionar <strong>cero o más opciones</strong>  dentro un número limitado de opciones.</p>
-                    </li>
-                    <li>
-                        <code>&ltinput type="radio"&gt</code>
-                        <p>Son botones de opción que le permiten al usuario seleccionar <strong>solo una opción</strong>  de un número limitado de opciones.</p>
-                    </li>
-                    <li>
-                        <code>&ltinput type="date"&gt</code>
                         <p>
-                            Se usa para campos de entrada que deben contener una fecha.
-                            <br>
-                            Según el soporte del navegador, puede aparecer un selector de fecha en el campo de entrada.
+                            <span><code>minlength:</code></span> este atributo nos sirve para definir la cantidad mínima de letras que se pueden escribir en la caja. No se podrán escribir en la caja menos caracteres que los indicados por el <code>minlength</code>.
                         </p>
                     </li>
                     <li>
-                        <code>&ltinput type="time"&gt</code>
                         <p>
-                            Permite al usuario seleccionar una hora (sin zona horaria).
-                            <br>
-                            Dependiendo del soporte del navegador, puede aparecer un selector de tiempo en el campo de entrada.
+                            <span><code>maxlength:</code></span> este atributo nos sirve para definir la cantidad máxima de letras que se pueden escribir en la caja. No se podrán escribir en la caja más caracteres que los indicados por el <code>maxlength</code>.
                         </p>
                     </li>
                     <li>
-                        <code>&ltinput type="datetime-local"&gt</code>
                         <p>
-                            especifica un campo de entrada de fecha y hora, sin zona horaria.
-                            <br>
-                            Según el soporte del navegador, puede aparecer un selector de fecha en el campo de entrada.</p>
+                            <span><code>value:</code></span> define si queremos que en la ventana haya un texto ya preescrito. Este texto puede ayudar al usuario a saber cúal es el tipo de dato que te piden en ese campo.
+                        </p>
                     </li>
                     <li>
-                        <code>&ltinput type="password"&gt</code>
-                        <p>Define un campo de contraseña. Los caracteres en un campo de contraseña están enmascarados (se muestran como asteriscos o círculos).</p>
+                        <p>
+                            <span><code>name:</code></span> para ponerle un nombre al campo. Esto resulta muy útil a la hora de gestionar la información que nos llegue.
+                        </p>
                     </li>
                     <li>
-                        <code>&ltinput type="search"&gt</code>
+                        <p>
+                            <span><code>required:</code></span> este atributo especifica que el usuario debe llenar obligatoriamente el campo antes de poder enviarse el formulario. En caso de no llenarse, aparecerá un cartel advirtiendo al usuario que se precisa que se llene el campo para poder efectivamente enviar la información. <br>
+                            (Este atributo no necesita escribirse en comillas, con solo escribir <code>required</code> dentro de la etiqueta de <code>input</code> ya es suficiente.)
+                        </p>
                     </li>
                     <li>
-                        <code>&ltinput type="submit"&gt</code>
+                        <p>
+                            <span><code>checked:</code></span> especifica que se debe preseleccionar un campo de entrada cuando se carga la página (para type="checkbox" o type="radio").
+                        </p>
                     </li>
                     <li>
-                        <code>&ltinput type="reset"&gt</code>
+                        <p>
+                            <span><code>disabled:</code></span> especifica que un campo de entrada debe estar deshabilitado.
+                        </p>
                     </li>
                     <li>
-                        <code>&ltinput type="color"&gt</code>
+                        <p>
+                            <span><code>max:</code></span> especifica el valor máximo para un campo de entrada.
+                        </p>
                     </li>
                     <li>
-                        <code>&ltinput type="file"&gt</code>
+                        <p>
+                            <span><code>min:</code></span> especifica el valor mínimo para un campo de entrada.
+                        </p>
                     </li>
                     <li>
-                        <code>&ltinput type="hidden"&gt</code>
+                        <p>
+                            <span><code>pattern:</code></span> especifica una expresión regular para verificar el valor de entrada.
+                        </p>
                     </li>
                     <li>
-                        <code>&ltinput type="image"&gt</code>
+                        <p>
+                            <span><code>readonly:</code></span> especifica una expresión regular para verificar el valor de entrada.
+                        </p>
                     </li>
                     <li>
-                        <code>&ltinput type="month"&gt</code>
-                    </li>              
-                    <li>
-                        <code>&ltinput type="range"&gt</code>
+                        <p>
+                            <span><code>step:</code></span> especifica los intervalos de números legales para un campo de entrada.
+                        </p>
                     </li>
-                    <li>
-                        <code>&ltinput type="week"&gt</code>
-                    </li>
+                    
                 </ul>
-                <p>De la lista que pudo verse recién, vamos a hablar de algunos de los formatos más usados:</p>
-                <section>
-                    <h2>type="text"</h2>
-                    <p>Este tipo de campos se usan para albergar informaciones cortas y concretas.</p>
-                    <p>Podemos completar los requerimientos del campo de texto gracias a los siguientes atributos, que son compartidos por la mayoría de los tipos recién nombrados:</p>
-                    <ul>
-                        <li>
-                            <p>
-                                <span><code>size:</code></span> mediante el atributo <code>size</code> podemos definir el tamaño de la caja. Es decir, la apariencia de la misma. Si el texto que vamos a escribir no cabe en la caja, éste se desplazará pero sin que la caja varíe su tamaño. El texto irá desapareciendo por la izquierda.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <span><code>minlength:</code></span> este atributo nos sirve para definir la cantidad mínima de letras que se pueden escribir en la caja. No se podrán escribir en la caja menos caracteres que los indicados por el <code>minlength</code>.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <span><code>maxlength:</code></span> este atributo nos sirve para definir la cantidad máxima de letras que se pueden escribir en la caja. No se podrán escribir en la caja más caracteres que los indicados por el <code>maxlength</code>.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <span><code>value:</code></span> define si queremos que en la ventana haya un texto ya preescrito. Este texto puede ayudar al usuario a saber cúal es el tipo de dato que te piden en ese campo.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <span><code>name:</code></span> para ponerle un nombre al campo. Esto resulta muy útil a la hora de gestionar la información que nos llegue.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <span><code>required:</code></span> este atributo especifica que el usuario debe llenar obligatoriamente el campo antes de poder enviarse el formulario. En caso de no llenarse, aparecerá un cartel advirtiendo al usuario que se precisa que se llene el campo para poder efectivamente enviar la información. <br>
-                                (Este atributo no necesita escribirse en comillas, con solo escribir <code>required</code> dentro de la etiqueta de <code>input</code> ya es suficiente.)
-                            </p>
-                        </li>
-                    </div>
-                </section>            
-            </div>
-            <div>
-                <section>
-                    <h2>type="email"</h2>
-                    <p></p>
-                </section>
-            </div>
-
-            
-
-            <li><p>¿Cómo se establece un límite a la cantidad de caracteres que puedo escribir en un campo de texto?</p></li>
-            <li><p>¿Cómo puedo hacer campos de opción múltiple, donde puedo seleccionar sólo una opción?¿Y para seleccionar varias opciones?</p></li>
-            <li><p>¿Cómo marco un campo como "requerido"?</p></li>
-            <li><p>¿Cómo hago para que un campo pueda ser "autocompletado"?</p></li>
-            <li><p>¿Cómo se hace una lista desplegable? ¿Y una lista desplegada?</p></li>
-            <li><p>¿Qué significa validar un formulario?</p></li>
-            <li><p>¿Cómo se valida un formulario?</p></li>
-
-        </section>
-
-
-       <form action="">
-           <label for="nombre">Nombre:</label>
-           <input required name="nombre" type="text" minlength="5" maxlength="10">
-           <br>
-           <label for="apellido">Apellido:</label>
-           <input name="apellido" type="text">
-           <br>
-           <label for="email">Email:</label>
-           <input required name="email" type="email">
-           <br>
-           <label for="altura">Altura:</label>
-           <input type="number" name="altura" min="1.3" max="2.5" step="0.1">
-           <br>
-           <label for="telefono">Teléfono:</label>
-           <input type="tel" name="tel" pattern="\d{3}-\d{3}-\d{4}">  <!-- o también pattern="([0-9]{3}-){2}\d{4" -->
-           <label for="fechanac">Feecha de nacimiento:</label>
-           <input type="date" name="fechanacimiento">
-           <label for="genero">Género:</label>
-           <input type="radio" value="femenino" name="genero">Femenino
-           <input type="radio" value="masculino" name="genero">Masculino
-           <input type="radio" value="otros" name="genero">Otros
-           <input type="radio" value="orefiero no decirlo" name="genero">Prefiero no decirlo
-           <br>
-
-           <label for="origen_visita">Cómo llegó a nuestra página?</label>
-           <input type="checkbox" value="RA" name="origen_visita">Referidos/Amigos
-           <input type="checkbox" value="P" name="origen_visita">Publicidad
-           <input type="checkbox" value="RS" name="origen_visita">Redes sociales
-           <input type="checkbox" value="O" name="origen_visita">Otros
-           <br>
-           <select name="provincia" id="">
-               <option value="CBA">Córdoba</option>
-               <option value="TF">Tierra del Fuego</option>
-               <option value="BA">Buenos Aires</option>
-               <option value="CBA">Córdoba</option>
-               <option value="TF">Tierra del Fuego</option>
-               <option value="BA">Buenos Aires</option>
-               <option value="CBA">Córdoba</option>
-               <option value="TF">Tierra del Fuego</option>
-               <option value="BA">Buenos Aires</option>
-               <option value="CBA">Córdoba</option>
-               <option value="TF">Tierra del Fuego</option>
-               <option value="BA">Buenos Aires</option>
-           </select>
-           <br>
-           <label for="">Código Postal:</label>
-           <input type="text" name="codigo_postal" size="8" minlength="8" maxlength="8">
-           <br>
-           <label for="">Mensaje</label>
-        
-           <textarea name="mensaje" placeholder="Escribí acá tu mensaje" id="" cols="80" rows="10"></textarea>
-
-
-           <button type="submit" name="enviar">Enviar</button>
-
-
-
-       </form>
-        
+            </section>            
+        </div>
+        <div>
+            <h2>Campos de texto largo: textarea</h2>
+            <p>
+                La etiqueta <code>&lttextarea&gt</code> define un control de entrada de texto de varias líneas.
+                <br>
+                Un área de texto puede contener un número ilimitado de caracteres, y el texto se representa en una fuente de ancho fijo (generalmente Courier).
+                <br>
+                El tamaño de un área de texto puede especificarse mediante los atributos de <code>cols</code> y <code>rows</code>, o incluso mejor; a través de las propiedades de alto y ancho de CSS.
+                <br>
+                Consejo: ¡Agregá siempre la etiqueta <code>&ltlabel&gt</code> para hacer uso de buenas prácticas de accesibilidad!
+            </p>
+        </div>
+        <div>
+            <h2>La etiqueta select</h2>
+            <p>
+                El elemento <code>&ltselect&gt</code> se usa para crear una lista desplegable.
+                <br>
+                Las etiquetas <code>&ltoption&gt</code> dentro del elemento <code>&ltselect&gt</code> definen las opciones disponibles en la lista.
+            </p>
+        </div>
+        <div>
+            <h2>La etiqueta button</h2>
+            <p>
+                La etiqueta <code>&ltbutton&gt</code> define un botón en el que se puede hacer clic.
+                <br>
+                Dentro de un elemento <code>&ltbutton&gt</code> se puede poner contenido como texto o imágenes. Esta es la diferencia entre este elemento y los botones creados con el elemento <code>&ltinput&gt</code>.
+                <br>
+                <strong>A tener en cuenta:</strong> si usás el elemento <code>&ltbutton&gt</code> en un formulario HTML, diferentes navegadores pueden enviar valores diferentes. Usá mejor <code>&ltinput&gt</code> para crear botones en un formulario HTML.
+            </p>
+        </div>
+        <div>
+            <h2>La etiqueta label</h2>
+            <p>
+                El elemento <code>&ltlabel&gt</code> define una etiqueta para muchos elementos, como <code>&ltinput&gt</code>, <code>&lttextarea&gt</code>, <code>&ltselect&gt</code>, <code>&ltmeter&gt</code> y <code>&ltprogress&gt</code>.
+                <br>
+                <p>El uso adecuado de las etiquetas con los elementos anteriores beneficiará a:</p> 
+                <ul>
+                    <li>Usuarios de lectores de pantalla (leerán la etiqueta cuando el usuario esté enfocado en el elemento).</li>
+                    <li>Usuarios que tienen dificultades para hacer clic en regiones muy pequeñas (como casillas de verificación), porque cuando un usuario hace clic en el texto dentro del elemento <label>, alterna la entrada (esto aumenta el área de acierto).</li>
+                </ul>
+                
+                
+            </p>
+        </div>         
     </body>
 </html>
+    
+         
+
+            
+        
