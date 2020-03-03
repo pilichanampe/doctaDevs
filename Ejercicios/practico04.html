@@ -22,8 +22,67 @@
                 <li><code>&ltlabel&gt</code></li>
                 <li><code>&ltoutput&gt</code></li>
             </ul>
-
+            <p>Algunos de los atributos que pueden utilizarse en <code>&ltform&gt</code> son los siguientes:</p>
+            <ul>
+                <li>
+                    <code>action</code>
+                    <p>
+                        Su <code>value</code> es la URL a donde se destinan los datos.
+                        <br>
+                        Especifica a dónde enviar los datos del formulario cuando se envía un formulario.
+                    </p>
+                </li>
+                <li>
+                    <code>autocomplete</code>
+                    <p>
+                        Su <code>value</code> puede ser <code>on</code> u <code>off</code>.
+                        <br>
+                        Especifica si un formulario debe tener el autocompletado activado o desactivado.
+                    </p>
+                </li>
+                <li>
+                    <code>enctype</code>
+                    <p>
+                        Su <code>value</code> puede ser <code>application/x-www-form-urlencoded</code>, <code>multipart/form-data</code> o <code>text/plain</code>.
+                        <br>
+                        Especifica cómo deben codificarse los datos del formulario al enviarlos al servidor (solo para <code> method="post"</code>).
+                    </p>
+                </li>
+                <li>
+                    <code>method</code>
+                    <p>
+                        Su <code>value</code>puede ser <code>get</code> o <code>post</code>.
+                        <br>
+                        Especifica el método HTTP que se usará al enviar los datos del formulario.
+                    </p>
+                </li>
+                <li>
+                    <code>name</code>
+                    <p>
+                        Su <code>value</code> es algún texto que detalle el nombre que queremos darle.
+                        <br>
+                        Especifica el nombre del formulario.
+                    </p>
+                </li>
+                <li>
+                    <code>novalidate</code>
+                    <p>
+                        Su <code>value</code> es <code>novalidate</code>.
+                        <br>
+                        Especifica que el formulario no debe validarse cuando se envía.
+                    </p>
+                </li>
+                <li>
+                    <code>target</code>
+                    <p>
+                        Su <code>value</code> puede ser <code>_blank</code>, <code>_self</code>, <code>_parent</code> o <code>top</code>.
+                        <br>
+                        Especifica dónde mostrar la respuesta que se recibe después de enviar el formulario.
+                    </p>
+                </li>              
+            </ul>
         </div>
+        <br>      
         <div>
             <h2>Campos de texto: input</h2>
             <p>Los campos de entrada de los formularios se definen mediante el tag <code>&ltinput&gt</code> y sus diferentes valores. Estos valores nos permiten utilizar varios tipos de cajas y de formas."</p>
@@ -230,10 +289,16 @@
                             <span><code>step:</code></span> especifica los intervalos de números legales para un campo de entrada.
                         </p>
                     </li>
+                    <li>
+                        <p>
+                            <span><code>placeholder:</code></span> se puede añadir un indicación para el usuario que defina que se debe insertar en el campo. 
+                        </p>
+                    </li>
                     
                 </ul>
             </section>            
         </div>
+        <br>
         <div>
             <h2>Campos de texto largo: textarea</h2>
             <p>
@@ -241,11 +306,12 @@
                 <br>
                 Un área de texto puede contener un número ilimitado de caracteres, y el texto se representa en una fuente de ancho fijo (generalmente Courier).
                 <br>
-                El tamaño de un área de texto puede especificarse mediante los atributos de <code>cols</code> y <code>rows</code>, o incluso mejor; a través de las propiedades de alto y ancho de CSS.
+                El tamaño de un área de texto puede especificarse mediante los atributos de <code>cols</code> y <code>rows</code>, o incluso mejor; a través de las propiedades de <code>width</code>  y <code>height</code> de CSS.
                 <br>
                 Consejo: ¡Agregá siempre la etiqueta <code>&ltlabel&gt</code> para hacer uso de buenas prácticas de accesibilidad!
             </p>
         </div>
+        <br>
         <div>
             <h2>La etiqueta select</h2>
             <p>
@@ -254,6 +320,7 @@
                 Las etiquetas <code>&ltoption&gt</code> dentro del elemento <code>&ltselect&gt</code> definen las opciones disponibles en la lista.
             </p>
         </div>
+        <br>
         <div>
             <h2>La etiqueta button</h2>
             <p>
@@ -264,6 +331,7 @@
                 <strong>A tener en cuenta:</strong> si usás el elemento <code>&ltbutton&gt</code> en un formulario HTML, diferentes navegadores pueden enviar valores diferentes. Usá mejor <code>&ltinput&gt</code> para crear botones en un formulario HTML.
             </p>
         </div>
+        <br>
         <div>
             <h2>La etiqueta label</h2>
             <p>

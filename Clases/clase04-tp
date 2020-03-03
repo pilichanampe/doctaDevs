@@ -72,7 +72,7 @@ target
 
     accept: type
         El tipo de control a mostrar. Su valor predeterminado es text, si no se especifica este atributo. Los posibles valores son:
-    autocomplete:
+    autocomplete: 
         Este atributo indica si el valor del control puede ser completado automáticamente por el navegador.
 
         Los valores posibles son:
@@ -148,6 +148,7 @@ target
 
             TEXTAREA
             El elemento HTML <textarea> representa un control para edición muti-línea de texto plano.
+            
             autocomplete HTML5
             Este atributo indica si el valor del control puede ser completado automáticamente por el navegador. Los posibles valores son:
             off: El usuario debe explícitamente introducir el valor del campo para cada uso, o el documento proporciona su propio método de auto-completado; el navegador no completa automáticamente.
