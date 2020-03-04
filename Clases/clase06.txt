@@ -1,0 +1,19 @@
+clase martes 3 de marzo de 2020
+
+<link rel="stylesheet" href="estilos.css"
+    asocia un archivo de hoja de estilos css a la pagina html. es una alternativa más ordenada a style.
+
+    SELECORES
+        Referencias a los elementos sobre los cuales aplicaremos estilos.
+    h1 + h2 {
+        background: yellow;
+        color: black;
+    }
+
+        operador + : quiere decir que un h2 que esté precedido por un h1.
+
+        propiedades y valores....
+
+        selector id, class, [atributo="valor"], etiqueta
+
+        
