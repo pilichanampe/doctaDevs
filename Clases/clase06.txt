@@ -16,4 +16,100 @@ clase martes 3 de marzo de 2020
 
         selector id, class, [atributo="valor"], etiqueta
 
-        
+
+
+        font-family
+            permite elegir la tipografia con la que vamos a msotrar el texto.
+
+
+        Podemos usar cualquier fuente, siempre y cuando esté disponible en la api... buscar
+
+        fonts.google.com
+
+
+        font-size
+            permite indicar el tamaño de la tipografia en el texto.
+
+            unidades de medida:
+                px ==> cada puntito de la pantalla
+
+                pt ==> viene del mundo de la imprenta
+
+                em ==> funciona en relacion a los padres
+
+                rem ==> veces el tamaño base del documento, autoadaptable a resolucion de pantalla. SUGERIBLE ESTE
+                Y SUGERIBLE USAR SIEMPRE EL MISMO TAMAÑO
+
+                rem respeta el documento
+
+                <div>
+                
+
+                font-weight
+                    existe una escala numerica para los pesos de la tipografia. 9 tamaños
+                    100 thin
+                    200 fine
+                    300 light
+                    400 regular
+                    500 medium
+                    600 semi-bold
+                    700 bold
+                    800 black
+                    900 ultra-black
+
+                    Como estandar, solo 2 o 3 pesos tipográficos tienen que ser suficientes para el peso de la página.
+
+                    normal=400
+                    bold=700
+
+                        Conviene escribir con el numero en vez de con las palabrass.
+                    
+                    font-style
+                        permite indicar si queremos utilizar un estilo en cursiva o recto.
+                        font-style= italic; o normal.
+                    
+            font-variant
+                permite indicar si queremos un variante en versalitas.
+
+                se le dice versalitas a todo el texto en mayúscula, con la mayúscula más grande que los demás.
+
+                en inglés es small-caps;
+                font-variant: normal;
+                font-variant: small-caps;
+
+
+                line-height
+                    expecifica la separación entre líneas en un texto. Es decir, interlineado.
+
+                    line-height; 150%
+
+                Para toda tipografia cuyo alto sea un 100%, vamos a querer un 120% de altura de línea para que se de el espacio para leer.
+
+
+                color:
+                establece el color del texto.
+
+                sistema RGB
+                    todo color de pantalla se forma mezclando rojo, verde y azul
+                    la maxima genera el color blanco y por eso se los llama colores luz. ADITIVOS
+
+                        COLORES SUSTRACTIVOS -- impresa
+                    
+                    qué significa ff?
+                        el color se puede expresar en sistema hexadecimal, 
+                            cuantos numeros entran en 16
+                            ff = 255
+                            cada dos digitos tenemos un canal
+                            rojo verde azul
+
+                contraste, hay que saber utilizarlo para que sea fácil de leer en cuanto a contraste.
+                Cualquier valor que esté arriba de 4 a 1.
+                rgb(255, 0, 0)
+
+                http://color.adobe.
+
+                color index jim krause.
+
+                Ejercicio
+                crear un archivo estilo.css y asociar a nuestra landing page.
+                aplicar estilos de texto de la landing page, siguiendo el diseño.
