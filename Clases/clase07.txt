@@ -1,0 +1,120 @@
+clase jueves 5/03/20
+
+EL MODELO DE CAJA EN CSS
+
+Todas las cosas que presentamos en la página se presenta en cajas.
+
+Controlas el flujo de contenido de la pantalla.
+
+que es el modelo de caja
+    el contenido tiene un espaciado interior (padding)
+    todos los elementos tienen un borde (border)
+    por último, existe un espaciado exterior (margin)
+
+
+    padding: top right bottom left
+        estabelce el espaciado interior de un elemento
+
+    va en el sentido de las aagujas del reloj: arriba, derecha, abajo, izquierda. --> forma abreviada de escribir todos al lado
+
+    padding: 1rem 1 rem 2 rem 3 rem;
+
+    otra forma abreviada --> espaciado vertical y horizontal
+
+    padding: 1 rem 3 rem;
+
+    cuando hay tres --> arriba, costados, abajo.
+
+
+    border: width style color
+        establece el borde de una caja
+
+        medidas: rem, pixeles, pt, --> Joel tiende a utilizar pixeles. rem en font size y lo demás ir viendo.
+
+    renderizado de subpíxeles... BUSCAR, cuando se usan decimales
+
+        3 tipos de bordes
+            solid --> linea solida
+            dotted --> punteada
+            dashed --> con guiones
+            bouble --> doble línea .
+        
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+
+    
+
+    ---
+
+    margin
+        margin --> establece el límite con otras cajas
+        sentido horario
+        arriba, derecha, abajo, izquierda
+
+    
+    como le damos tamaño a las cosas??
+        width 
+            define el ancho de un elemento, conforme al modelo de caja
+        heigth
+            define el alto de un elemento, conforme al modelo de caja
+
+
+box-sizing
+    indica cómo se mide el ancho y alto de una caja en CSS
+
+* {
+    box-sizing: border-box;
+
+}
+        * : todas las etiquetas posibles en html. No usar esto para otra cosa... Solo para el box-sizing. Es un selector absoluto.
+
+        inherit: heredar. sirve para copiar el valor de la etiqueta contenedora y darselo una etiqueta hija
+                inicial:  
+                unset:
+                auto: calcular vos este valor
+
+
+                elementos de bloque y elementos en línea.
+
+                Block elements e inline elements
+
+
+                display: inline;
+                display: block;
+
+                inline-block
+
+
+                flex
+
+
+
+                grid
+
+Hay ciertos elementos que no pueden definirse ancho y alto, son inline.
+    inline-block, permite que los elementos puedan seguir uno al lado del otro, 
+        .enlace {
+            width:100px;
+            display: inline-block;
+            
+        }
+
+
+
+    div
+    span
+    header
+    footer
+    aside
+    nav
+    section
+    article --> todo el bloque funciona como un subdocumento...
+    figure --> para figura 1, etc y caption para el epígrafe
+    details --> area expandida de informacion
+    address --> domicilio
+    hr --> horizontal rule
+
+    
+
+        
