@@ -64,7 +64,7 @@ box-sizing
     indica cómo se mide el ancho y alto de una caja en CSS
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; --> content-box mide como mide el navegador. Border-box mide realmente lo que vemos.
 
 }
         * : todas las etiquetas posibles en html. No usar esto para otra cosa... Solo para el box-sizing. Es un selector absoluto.
@@ -103,6 +103,7 @@ Hay ciertos elementos que no pueden definirse ancho y alto, son inline.
 
 
     div
+    main --> principal, todo lo que no está en header y footer. Puede servir para informar el area de contenido principal.
     span
     header
     footer
