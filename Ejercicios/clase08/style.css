@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(60, 60, 60);
+}
+
+.grilla {
+    background-color: rgb(120, 120, 120);
+    padding: 10px;
+    display: flex;
+    height: 500px;
+}
+
+.bloque {
+    background-color: rgb(180, 180, 180);
+    margin: 10px;
+    padding: 5px;
+    flex: 1;
+    display: flex;
+    height: 200px;
+
+
+}
+
+.bloque-izquierdo {
+    align-items: flex-start;
+
+}
+
+.bloque-central {
+    align-items: center;
+    
+}
+
+.bloque-derecho {
+    align-items: flex-end;
+
+}

@@ -1,0 +1,66 @@
+martes 10/03/20 clase 08
+
+    POSICIONAMIENTO Y ORDENAMIENTO DE ELEMENTOS
+
+     div
+
+        agrupadores semánticos:
+    main --> principal, todo lo que no está en header y footer. Puede servir para informar el area de contenido principal.
+    span
+    header
+    footer
+    aside
+    nav
+    section
+    article --> todo el bloque funciona como un subdocumento... Puede tener sus propios header y footer
+    figure --> para figura 1, etc y caption para el epígrafe
+    details --> area expandida de informacion
+    address --> domicilio
+    hr --> horizontal rule
+            
+
+
+    elementos en linea
+        son etiquetas que fluyen con el texto y no generan un bloque independiente.
+            imagenes
+            h
+            p
+
+
+    elemtos en bloque
+        son etiquetas que interrumpen el flujo natural del texto. Inicializan un nuevo bloque.
+
+PAGINAS PARA PONER IMAGENES QUE VAN CAMBIANDO, LOREM PICSUM.
+
+
+
+position: static
+    todos los elementos, por defecto, se posicionan siguiendo el flujo del documento.
+
+position: absolute;
+    despega el elemento del flujo natural del texto, se pega como un sticker, el texto sigue por debajo, por ejemplo.
+
+    .imagen-esquinera {
+        position: absolute;
+        top: ;
+        left: ;
+        
+        right: ;
+        botton: ; 
+    }
+
+
+position: fixed;
+    deja elemento fijo en la pantalla
+
+maneras de ocultar un elemento en css:
+    display: none;
+
+    ó
+
+    visibility: hidden; --> suele usarse para animaciones.
+
+
+
+position: relative;
+    
