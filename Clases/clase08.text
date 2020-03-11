@@ -63,4 +63,8 @@ maneras de ocultar un elemento en css:
 
 
 position: relative;
+
+
+FLEX:
+    flex 1, significa dividí en exacta proporsión los elementos que hay dentro
     
