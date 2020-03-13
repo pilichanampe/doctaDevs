@@ -12,7 +12,7 @@ body {
     display: flex;
     height: 500px;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .bloque {

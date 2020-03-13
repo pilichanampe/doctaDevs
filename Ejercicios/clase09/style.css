@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.box div {
+    background-size: cover;
+    object-fit: cover;
+}
+
+.box div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+
+

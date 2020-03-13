@@ -1,0 +1,56 @@
+clase 08 jueves 12/03
+
+tenemos dos ejes de direccion
+    por defecto, un contenedor de clase flex va a fluir de izquierda a derecha
+        flex-direction: --> en qué orden van a mostrarse las cajas.
+            column
+            column-reverse
+            row
+            row-reverse
+        
+        flex-wrap: --> envolver, como la grilla que envuelve a los elementos va a controlar el limite
+            flex-wrap: wrap;
+                cuando ya no hay más lugar arriba, sigue hacia abajo en vez de quedar todo en una sola linea.
+            
+        NO SE PUEDE TENER FLEX: 1 por ej Y ADEMÁS UN ANCHO, NO VA A FUNCIONAR. SI PUSE FLEX, ya la medida de width no sirve.
+
+        .bloque-ancho {
+            flex: 2;
+        }
+
+
+    width height
+    min-width
+    max-width
+
+    min-height
+    max-height
+
+        puedo combinar con flex para poder restringir el ancho o el alto y controlar eso, el minimo o el maximo
+    
+    justify-content:--> usa el eje horizontal
+        center;
+            centra las cosas
+        
+    align-items: --> usa el eje vertical
+
+
+NO USAR BR PARA OTRA COSA QUE NO SEA SALTO DE PARRAFOS. SI ES VISUAL, TENDRÍA QUE ARREGLARLO CON CSS!!!!!
+
+SE PUEDE UTILIZAR DIVS PARA LAS COLUMNAS EN GEEKS CON ONDA SIN LA ETIQUETA P, ya que no tienen mas nada adentro
+
+EL DIV NO GENERA MARGENES!!! puedo usar divs en vez de parrafos para el caso de estas COLUMNAS
+
+EJERCICIO!
+    Entrar a unplash.com y descargar 6 fotos
+
+    Hacer una grilla de 
+        1 fila con 3 COLUMNAS
+        1 fila con 2 COLUMNAS
+        1 fila con una COLUMNAS
+
+        entre cada fila
+            3rem de espacio, principio y fin también
+            cada una de las cajas va a tener 
+                padding: 1rem;
+                
