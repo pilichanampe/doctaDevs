@@ -5,19 +5,27 @@
 .box {
     display: flex;
     align-items: center;
-    flex: 1;
+    overflow: hidden;
 }
 
 .box div {
     background-size: cover;
     object-fit: cover;
+    flex: 1;
+    
+    
+   
 }
 
 .box div img {
-    width: 100%;
+    width: 200%;
     height: 100%;
-    object-fit: cover;
-  
+    margin: auto;
+    display: block;
+}
+
+.food-img {
+    width:300%;
 }
 
 
