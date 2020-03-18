@@ -1,0 +1,63 @@
+martes 17 de marzo
+
+SELECTORES Y PSEUDOELEMENTOS
+
+operadores
+    permite relacionar selectores para crear reglas de estilo más específicas. Modifican el comportamiento de nuestros estilos
+
+    operador coma,
+    Permite que varios selectores compartan los mismos estilos
+    Muy recomendado para reutilizar código!
+
+    operador >
+        Restringe la aplicación de las reglas de estilos entre selectores, a través de una relación de descendiente direecto --> se refiere a un elemento, el siguiente elemento que sigue dentro de esa etiqueta
+
+    operador espacio
+        Restriunge la aplicación de las reglas de estilos entre selectores, a través de una relación de descendiente indirecto -->
+
+    operador de atributo
+        Aplica las reglas del bloque a aquellas etiquetas que tengan un atributo con un valor definido.
+            va con corchetes [type="e-mail"], [required]
+
+    operador global *
+        Aplica las reglas del bloque a todas las etiquetas.
+        Al ser un selector tan masivo, puede hacer que el navegador ande más lento. Por eso, solo se utiliza para los decir box-sizing=border-box.
+
+    operador de adyavencia +
+        Aplica las reglas del bloque a etiquetas seguidas una detrás de la otra con el mismo selector.
+    
+
+    PAGINA PARA TRABAJAR
+        www.placeholdit.it/400x400
+            le ponés la medida que necesites después de la barra y te da las medidas para ir probando.
+
+    
+
+CONVENCIÓN BEM, bloque elemento modificador
+    buscar
+    .menu__opcion__enlace
+
+    convencion de nombres, serie de recomendaciones de como nombrar ciertas cosas en base a criterios estandarizados.
+
+
+buscar reutilizar clases. CSS atómico: clases en CSS que propone que las clases y reglas sean lo más concretas y breves posible
+
+    COMPONENTIZACION
+        Detectar componentes en un diseño, unificar componentes comunes
+
+PSEUDOCLASES
+    :focus
+        enfocado
+
+    :hover
+        aplica las reglas del bloque cuando el puntero del mouse está encima del elemento.
+
+    :empty
+    que no tenga ningun elemento como descendiente. \
+
+    :first-child
+        identifica primer descendiente del primer elemento
+
+    :nth-child(numero de la posicion del elemento)
+
+    :last-child

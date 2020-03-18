@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+  }
+  .contenedor{
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .numero{
+    font-size: 4rem;
+  }
+  .duracion{
+    font-size: 1rem;
+  }
+  .bloque{
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+  .bloque-centro{
+    margin: 0;
+    max-width: none;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .bloque-izq{
+    text-align: left;
+  }
+  .bloque-der{
+    text-align: rigth;
+  }
+  .bloque-izq, .bloque-der{
+      max-width: 100px;
+  }
