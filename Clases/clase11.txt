@@ -1,0 +1,60 @@
+clase 11 19 marzo 2020
+    flex
+        space-around
+        space-between
+
+    flex-flow
+        podés escribir flex-direction y flex-wrap en una sola línea
+
+    ACCESIBILIDAD EN DESARROLLO WEB
+        internet: derecho universal humano
+            se considera una de las formas más efectivas al acceso a la información hoy en día.
+
+        qué es accesibilidad?
+            poder acceder a algo. Tengo que tener la capacidad de poder usarlo.
+            Computadoras, celulares, pantallas. Inminentemente visuales. Qué pasa si una persona no puede ver? usar sus manos? escribir en un teclado? tiene alguna discapacidad cognitiva? si usamos colores y las personas no pueden ver?
+
+
+            Durante muchos años, no se le dio tanta bolilla a la accesibilidad. Excusas que marginalizan a las personas con discapacidad.
+
+            Empienzan hace algunos años a estandarizar el desarrollo hacia la accesibilidad para que internet sea lo mayor accesible posible.
+
+            Web Accessibility Iniciative WAI
+                estrategias, pautas y recursos para hacer la web más accesible.
+
+            Existe una ley nacional de accesibilidad 26653
+                cualqueir sitio web que sea del estado o reciba financiación del Estado, tiene que cumplir con un mínimo de accesibilidad.
+
+            Las discapacidades no son solo visuales.
+
+            Daltonismo. No podes ver un tipo de color. Existen distintos tipos de Daltonismo
+
+            discapacidades 
+                fisicas
+                psico social
+                temporales
+                cognitiva
+                sensorial
+
+html semántico
+    utilizar las etiquetas para lo que son.
+
+ARIA
+    Accessible RIch Inrternet Applications
+
+    ayuda a controlar como un lector de pantalla interactua una pagina
+
+    aria-label
+        permite indicar al lector de pantalla que se lea el elemento que tiene dentor el atributo
+
+    aria-hidden
+        true, 
+            cuando pase el lector por acá, el lector no lo va a leer. Lo va a pasar de largo
+    role
+        permite que definamos como queremos que un elemento se comporte ante el lector.
+
+        por ej, una etiqueta ul que es un menu, y un nav que es un menubar.
+
+
+
+css-tricks.com
