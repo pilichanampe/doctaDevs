@@ -1,0 +1,27 @@
+.container * {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background-color:#2d9ee9;
+    flex-wrap: wrap;
+    padding: 2px;
+}
+
+.pixel {
+    display: flex;
+    border: 1px solid #2d9ee9;
+    width: 20px;
+    height: 20px;
+    background-color: #158fe0;
+    
+    justify-content: space-between;
+}
+
+.white {
+    background-color: white;
+    border-style: none;
+}
