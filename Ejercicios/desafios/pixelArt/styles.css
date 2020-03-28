@@ -8,7 +8,7 @@
     height: 400px;
     background-color:#2d9ee9;
     flex-wrap: wrap;
-    padding: 2px;
+    padding: 1px;
 }
 
 .pixel {
@@ -21,7 +21,16 @@
     justify-content: space-between;
 }
 
-.white {
+
+/* Solución usando la pseudoclase :nth-child más el operador coma*/
+
+.pixel:nth-child(130), .pixel:nth-child(131), .pixel:nth-child(149), .pixel:nth-child(150), .pixel:nth-child(151), .pixel:nth-child(152), .pixel:nth-child(131), .pixel:nth-child(168), .pixel:nth-child(169), .pixel:nth-child(170), .pixel:nth-child(171), .pixel:nth-child(172), .pixel:nth-child(173), .pixel:nth-child(187), .pixel:nth-child(188), .pixel:nth-child(190), .pixel:nth-child(191), .pixel:nth-child(193), .pixel:nth-child(194), .pixel:nth-child(207), .pixel:nth-child(208), .pixel:nth-child(209), .pixel:nth-child(210), .pixel:nth-child(211), .pixel:nth-child(212), .pixel:nth-child(213), .pixel:nth-child(214), .pixel:nth-child(229), .pixel:nth-child(232), .pixel:nth-child(248), .pixel:nth-child(250), .pixel:nth-child(251), .pixel:nth-child(253), .pixel:nth-child(267), .pixel:nth-child(269), .pixel:nth-child(272), .pixel:nth-child(274) {
     background-color: white;
     border-style: none;
 }
+
+/* Solución con una clase adicional
+.white {
+    background-color: white;
+    border-style: none;
+}*/
