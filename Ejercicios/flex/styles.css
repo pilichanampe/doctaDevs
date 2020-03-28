@@ -1,28 +1,25 @@
 /**
  * hola!!
  **/
- html, body {
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
- }
- body {
-    
+}
+
+body {    
     background: linear-gradient(to right, #f2be7e 8%, #f1af58 22%, #f0a338 34%, #f68e0e 56%, #f08f19 60%, #cc6a08 100%);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
-    
-        
-        
-  }
+    align-items: center;   
+}
   
 .container * {
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
 }
+
 .container {  
     margin: auto;
     display: flex;
@@ -34,6 +31,7 @@
     box-shadow: 14px 15px 37px 0px #7a6351;
     border-radius: 5px;
 }
+
 .box-perfil {
     padding: 2rem;
     display: flex;
@@ -41,8 +39,6 @@
     align-items: center;
     width: 62%;
     text-align: center;  
-    
-    
 }
 
 .box-perfil h1 {
@@ -56,6 +52,7 @@
     font-weight: normal;
     font-size: 1.3rem;
 }
+
 .avatar {
     display: flex;
     width: 120px;
@@ -63,14 +60,13 @@
     align-items: center;
     justify-content: center;
 }
+
 .avatar img {
     position: absolute;
     width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    
-    
 }
 
 .circle {
@@ -80,9 +76,6 @@
     height: 130px;
     border-radius: 50%;
     border-left-color: transparent;
-    
-   
-    
 }
 
 .avatar:last-child {
@@ -92,8 +85,6 @@
     border-radius: 50%;
     border-left-color: #7a6351;
     border-right-color: transparent;
-    
-    
 }
 
 .box-social {
@@ -103,9 +94,9 @@
     justify-content: space-around;
     flex: 1;
 }
+
 .estadistica {
-    background: #f1e3dd;
-    
+    background: #f1e3dd;    
     width: 100%;
     display: flex;
     align-items: center;
@@ -113,21 +104,20 @@
     flex: 1;
     margin: 0.1rem;
     justify-content: center;
-    
 }
 
 .estadistica:first-child {
     border-top-right-radius: 5px;
-    }
+}
     
-    .estadistica:last-child {
+.estadistica:last-child {
     border-bottom-right-radius: 5px;
-    }
+}
 
 .button-container {
     display: flex;
     flex-direction: column;
-    }
+}
 
 .button-container button{
     border-radius: 2rem;
@@ -139,8 +129,7 @@
     font-family: sans-serif;
     font-size: 1.3rem;
     font-weight: bold;
-    color: #7a6351;
-    
+    color: #7a6351;    
 }
 
 .button-container button:first-child {
@@ -149,11 +138,8 @@
 
 .button-container button:hover {
     background-color: #7a6351;
-    color: #ffffff;   
-    
+    color: #ffffff;  
 }
-
-
 
 .box-social .numero {
     font-weight: bold;
