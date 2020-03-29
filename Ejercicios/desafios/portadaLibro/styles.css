@@ -3,13 +3,14 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-}
+} 
 
 body {    
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
+    background-color: #dfe4e9;  
 }
   
 
@@ -18,10 +19,54 @@ body {
 }
 
 .container {
-    font-family: 'Inter', sans-serif;
+    display: flex;   
+    max-width: 390px;
+    min-width: 390px;
+    height: 530px;
+    background: linear-gradient(to right, #4c4c4c 0%, #4c4c4c 2%, #595959 5%, #000000 7%, #666666 9%, #474747 39%, #2b2b2b 63%, #1c1c1c 78%, #161616 88%, #121212 93%, #111111 95%, #131313 100%);
+    align-items: center;    
+    border-radius: 3px 7px 7px 3px;
+    box-shadow: -6px 9px 12px -1px #00000070;
 }
 
-.container h2 {
-    font-style: italic;
-    font-weight: normal;
+.container .band {
+    position: static;
+    margin-left: 6%;
 }
+
+
+.book-title {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 2.9rem;
+    margin: 0 0 25% 20%;
+    
+   
+}
+
+.book-title h1, .book-title h2{
+    margin: 0;
+    
+}
+
+.book-title h2 {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1.2rem;
+    color: rgb(223, 219, 219);
+   
+    
+}
+
+.band {
+    position: absolute;
+    background: linear-gradient(to right, #991f0f 23%, #a72610 35%, #9b1f0c 37%, #750a00 43%, #951d0d 51%, #991f0f 52%, #690c02 61%, #8f1a10 73%, #ad2111 92%);
+    width: 18px;
+    height: 534px;
+    border-radius: 2px;  
+
+}
+
