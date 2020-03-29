@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;   
+}
+  
+
+.container * {
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: 'Inter', sans-serif;
+}
+
+.container h2 {
+    font-style: italic;
+    font-weight: normal;
+}
