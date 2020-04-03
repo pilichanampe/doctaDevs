@@ -1,0 +1,10 @@
+CLASE 12 2-04-2020
+
+Conviene pensando los media queries poner un min-width para ir pensando cómo se van ensanchando las pantallas
+
+ruta absoluta, ruta relativa
+
+
+.boton-derecho img {
+    transform: scaleX(-1);
+  }
