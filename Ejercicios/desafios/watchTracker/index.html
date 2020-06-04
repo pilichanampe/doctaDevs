@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app/watch-date/styles.css">
+    <link rel="stylesheet" href="app/watch-screen/styles.css">
+    <link rel="stylesheet" href="app/watch-time/styles.css">
+    <link rel="stylesheet" href="app/watch-tracker/styles.css">
+        
+</head>
+<body>
+
+    <template id="watch-date">
+      <h1 slot name="date">DAY 20 MONTH 2020</h1>      
+    </template>
+    <template id="watch-screen">
+      <div class="container circle">
+        <div class="turning-border circle"></div>
+        <div class="doted-border circle"></div>
+      </div>          
+    </template>
+    <template id="watch-time">
+      <div><slot name="time"></slot></div>
+    </template>
+    <template id="watch-tracker">
+      <div>
+        <img src="#" alt="corazón marcapasos">
+        <div id="heart-bpm">
+          <slot name="heartbeat"></slot>
+        </div>
+      </div>
+      <div id="calory-counter">
+        <slot name="calories"></slot>
+      </div>
+    </template>
+    
+    <watch-screen></watch-screen>
+    <watch-date></watch-date>
+    <watch-time></watch-time>
+    <watch-tracker></watch-tracker>
+
+    <script src="app/watch-date/component.js"></script>
+    <script src="app/watch-screen/component.js"></script>
+    <script src="app/watch-time/component.js"></script>
+    <script src="app/watch-tracker/component.js"></script>
+</body>
+</html>
