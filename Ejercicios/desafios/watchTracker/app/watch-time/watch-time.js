@@ -16,11 +16,12 @@ class WatchTime extends HTMLElement {
   connectedCallback() {
     this.colon = this.shadowRoot.querySelectorAll(".colon");   //querySelectorAll devuelve un array, por lo que hay que leerlo como una lista con un forEach, si no, no funca.  
     //this.blink(this.colon);
-    this.blinkAll(this.colon);
-    this.updateTime();    
+    //this.blinkAll(this.colon);
+    this.loadTime();
+    this.updateTime();   
   }  
 
-  updateTime() {
+  loadTime() {
     const date = new Date();
     const hour = date.getHours();
     const minute = date.getMinutes();
@@ -30,9 +31,15 @@ class WatchTime extends HTMLElement {
     this.shadowRoot.querySelector("#minute").innerText = this.addZero(minute);
     this.shadowRoot.querySelector("#second").innerText = this.addZero(second);    
 
-    setTimeout(() => {      
-      this.updateTime();    
-    }, 1000);    
+   /* setTimeout(() => {      
+      this.loadTime();    
+    }, 1000);  */  
+  }
+
+  updateTime() {
+    setInterval(() => {      
+      this.loadTime();    
+    }, 1000);  
   }
 
   blinkAll(selectors) {
