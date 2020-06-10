@@ -4,3 +4,6 @@ function loadTemplate(referenceTemplate, instanceComponente) {
     instanceComponente.attachShadow({ mode: "open" })
       .appendChild(templateContent.cloneNode(true));
   }
+
+
+
