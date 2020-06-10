@@ -1,36 +1,56 @@
 class WatchTime extends HTMLElement {
-    constructor() {
-      super();
-      loadTemplate("#watch-time", this);
-
-      this.date = new Date();
-      this.hour = date.getHours();
-      this.minute = date.getMinute();
-      this.second = date.getSeconds();
-
-    }
-  
-    connectedCallback() {
-        this.colon = this.shadowRoot.querySelector("#colon");
-        this.blink(this.colon);
-        this.showTime();
-        }
+  constructor() {
+    super();
+    loadTemplate("#watch-time", this);
+    /*this.date = new Date();
+    this.hour = this.date.getHours();
+    this.minute = this.date.getMinutes();
+    this.second = this.date.getSeconds();
+    this.colon = this.shadowRoot.getElementById("colon");
+    this.blink(this.colon);
+    this.loadTime();*/
     
+
+  }
+
+  connectedCallback() {
+    this.colon = this.shadowRoot.querySelectorAll(".colon");   //querySelectorAll devuelve un array, por lo que hay que leerlo como una lista con un forEach, si no, no funca.  
+    //this.blink(this.colon);
+    this.blinkAll(this.colon);
+    this.updateTime();    
+  }  
+
+  updateTime() {
+    const date = new Date();
+    const hour = date.getHours();
+    const minute = date.getMinutes();
+    const second = date.getSeconds();
     
-    completeTime(number) {
-      if (number < 10) {
-        return "0" + number;
-      }
-      else {
-        return number;
-      }
-    }
+    this.shadowRoot.querySelector("#hour").innerText = this.addZero(hour);
+    this.shadowRoot.querySelector("#minute").innerText = this.addZero(minute);
+    this.shadowRoot.querySelector("#second").innerText = this.addZero(second);    
 
-    showTime() {}
+    setTimeout(() => {      
+      this.updateTime();    
+    }, 1000);    
+  }
 
-    blink(element) {
-        this.shadowRoot.querySelector(element).style.animation = "blink 1s infinite";
+  blinkAll(selectors) {
+    selectors.forEach(element => element.style.animation = "blink 1s infinite");
+  }
+
+  /*blink(element) {
+    element.style.animation = "blink 1s infinite";
+  }*/
+
+  addZero(number) {
+    if (number < 10) {
+      return "0" + number;
     }
+    else {
+      return number;
+    }
+  }
 }
 
 window.customElements.define("watch-time", WatchTime);
