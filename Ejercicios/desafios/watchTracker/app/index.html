@@ -5,36 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="app/watch-date/styles.css">
-    <link rel="stylesheet" href="app/watch-screen/styles.css">
-    <link rel="stylesheet" href="app/watch-time/styles.css">
-    <link rel="stylesheet" href="app/watch-tracker/styles.css">
-    <link rel="stylesheet" href="app/main-styles.css">           
+    <link rel="stylesheet" href="main-styles.css">           
 </head>
 <body>
 
     <template id="watch-date">
-      <h1 slot name="date">DAY 20 MONTH 2020</h1>      
+      <h1 slot name="date">DAY 20 MONTH 2020</h1>
+
+      <!-- CSS file-->
+      <link rel="stylesheet" href="app/watch-date/watch-date.css">      
     </template>
     <template id="watch-screen">
       <div class="container circle">
         <div class="turning-border circle"></div>
         <div class="doted-border circle"></div>
-      </div>          
+      </div>
+
+      <!-- CSS file-->
+      <link rel="stylesheet" href="watch-screen/watch-screen.css">          
     </template>
     <template id="watch-time">
       <div><slot name="time"></slot></div>
+
+      <!-- CSS file-->
+      <link rel="stylesheet" href="watch-time/watch-time.css">
     </template>
     <template id="watch-tracker">
       <div>
         <img src="#" alt="corazón marcapasos">
         <div id="heart-bpm">
           <slot name="heartbeat"></slot>
-        </div>
+        </div>       
       </div>
       <div id="calory-counter">
         <slot name="calories"></slot>
       </div>
+      
+      <!-- CSS file-->
+      <link rel="stylesheet" href="watch-tracker/watch-tracker.css">
     </template>
     
     <watch-screen></watch-screen>
@@ -42,10 +50,10 @@
     <watch-time></watch-time>
     <watch-tracker></watch-tracker>
 
-    <script src="watch-date/component.js"></script>
-    <script src="watch-screen/component.js"></script>
-    <script src="watch-time/component.js"></script>
-    <script src="watch-tracker/component.js"></script>
+    <script src="watch-date/watch-date.js"></script>
+    <script src="watch-screen/watch-screen.js"></script>
+    <script src="watch-time/watch-time.js"></script>
+    <script src="watch-tracker/watch-tracker.js"></script>
     <script src="utilities.js"></script>
 </body>
 </html>
