@@ -8,52 +8,59 @@
     <link rel="stylesheet" href="main-styles.css">           
 </head>
 <body>
+  <watch-screen></watch-screen>
+  <watch-date></watch-date>
+  <watch-time>Hola!</watch-time>
+  <watch-tracker></watch-tracker>
 
-    <template id="watch-date">
-      <h1 slot name="date">DAY 20 MONTH 2020</h1>
+  <template id="watch-date">
+    <h1 slot name="date">DAY 20 MONTH 2020</h1>
 
-      <!-- CSS file-->
-      <link rel="stylesheet" href="app/watch-date/watch-date.css">      
-    </template>
-    <template id="watch-screen">
-      <div class="container circle">
-        <div class="turning-border circle"></div>
-        <div class="doted-border circle"></div>
-      </div>
+    <!-- CSS file-->
+    <link rel="stylesheet" href="app/watch-date/watch-date.css">      
+  </template>
+  <template id="watch-screen">
+    <div class="container circle">
+      <div class="turning-border circle"></div>
+      <div class="doted-border circle"></div>
+    </div>
 
-      <!-- CSS file-->
-      <link rel="stylesheet" href="watch-screen/watch-screen.css">          
-    </template>
-    <template id="watch-time">
-      <div><slot name="time"></slot></div>
-
-      <!-- CSS file-->
-      <link rel="stylesheet" href="watch-time/watch-time.css">
-    </template>
-    <template id="watch-tracker">
-      <div>
-        <img src="#" alt="corazón marcapasos">
-        <div id="heart-bpm">
-          <slot name="heartbeat"></slot>
-        </div>       
-      </div>
-      <div id="calory-counter">
-        <slot name="calories"></slot>
-      </div>
-      
-      <!-- CSS file-->
-      <link rel="stylesheet" href="watch-tracker/watch-tracker.css">
-    </template>
+    <!-- CSS file-->
+    <link rel="stylesheet" href="watch-screen/watch-screen.css">          
+  </template>
+  <template id="watch-time">
     
-    <watch-screen></watch-screen>
-    <watch-date></watch-date>
-    <watch-time></watch-time>
-    <watch-tracker></watch-tracker>
+    <div id="hour">Hola!!!</div>
+    <div id="colon"></div>
+    <div id="minute"></div>      
+    <div id="second"></div>
+    <!-- CSS file-->
+    <link rel="stylesheet" href="watch-time/watch-time.css">
+    
+    
+  </template>
+  <template id="watch-tracker">
+    <div>
+      <img src="#" alt="corazón marcapasos">
+      <div id="heart-bpm">
+        <slot name="heartbeat"></slot>
+      </div>       
+    </div>
+    <div id="calory-counter">
+      <slot name="calories"></slot>
+    </div>
 
-    <script src="watch-date/watch-date.js"></script>
-    <script src="watch-screen/watch-screen.js"></script>
-    <script src="watch-time/watch-time.js"></script>
-    <script src="watch-tracker/watch-tracker.js"></script>
-    <script src="utilities.js"></script>
+    <!-- CSS file-->
+    <link rel="stylesheet" href="watch-tracker/watch-tracker.css">
+  </template>
+  
+
+
+  <script src="utilities.js"></script>
+  <script src="watch-date/watch-date.js"></script>
+  <script src="watch-screen/watch-screen.js"></script>
+  <script src="watch-time/watch-time.js"></script>
+  <script src="watch-tracker/watch-tracker.js"></script>
+    
 </body>
 </html>
