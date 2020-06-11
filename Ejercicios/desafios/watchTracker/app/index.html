@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="main-styles.css">           
 </head>
 <body>
-  <watch-screen></watch-screen>
-  <watch-date></watch-date>
-  <watch-time></watch-time>
-  <watch-tracker></watch-tracker>
+  <watch-screen>
+    <watch-date></watch-date>
+    <watch-time></watch-time>
+    <watch-tracker></watch-tracker>
+  </watch-screen>
 
   <template id="watch-date">
     <h1 slot name="date">DAY 20 MONTH 2020</h1>
@@ -21,7 +22,8 @@
   </template>
 
   <template id="watch-screen">
-    <div class="container circle">
+    <slot></slot>
+    <div class="circle">
       <div class="turning-border circle"></div>
       <div class="doted-border circle"></div>
     </div>
