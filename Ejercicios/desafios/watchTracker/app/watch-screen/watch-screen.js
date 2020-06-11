@@ -1,12 +1,13 @@
 class WatchScreen extends HTMLElement {
-    constructor() {
-      super();
-      loadTemplate("#watch-screen", this);
-    }
+  constructor() {
+    super();
+    loadTemplate("#watch-screen", this);
+  }
 
-    /*connectedCallback() {
-
-    }*/
+  connectedCallback() {
+    //this.shadowRoot.querySelector(".turning-border").style.animation = "rotate 1s infinite";
+    
+  }
 }
 
 window.customElements.define("watch-screen", WatchScreen);
