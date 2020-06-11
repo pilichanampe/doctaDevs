@@ -3,13 +3,14 @@ section {
   justify-content: space-between;
   align-items: center;
   width: 180px;
-  /*border: 2px solid pink;*/
+  border: 2px solid pink;
 }
 
 img {
   width: 20px;
   height: 20px;
-  animation: blink 1s infinite;  
+  animation: blink 1s infinite;
+  border: 2px solid green;  
 }
 
 #frequency {
@@ -17,23 +18,30 @@ img {
   align-items: center;
   justify-content: space-between;
   font-size: 1.2rem;
-  /*border: 2px solid coral;*/
-  width: 50px;
+  border: 2px solid coral;
+  /*width: 50px;*/
 }
 
-#heart-bpm {
-  padding-left: 5px;
-
+#bpm {
+  padding-left: 5px;  
   font-size: 1.2rem;
+  flex: 1;
+  
+}
+
+#calories {
+  text-align: end;
+  border: 2px solid coral;
+  flex: 1;
 }
 
 @keyframes blink {
   50% {
-    opacity: 0.5;
-    transform: scale(0.9);
+    opacity: 1;
   }
   100% {
-    opacity: 1;
     
+    opacity: 0.5;
+    transform: scale(0.9);
   }
 }
