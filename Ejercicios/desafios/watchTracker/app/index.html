@@ -22,11 +22,15 @@
   </template>
 
   <template id="watch-screen">
-    <slot></slot>
-    <div class="circle">
-      <div class="turning-border circle"></div>
-      <div class="doted-border circle"></div>
-    </div>
+    <section>
+      <slot>
+        <div class="circle">
+          <div class="turning-border circle"></div>
+          <div class="doted-border circle"></div>
+        </div>
+      </slot>
+    </section>
+    
 
     <!-- CSS file-->
     <link rel="stylesheet" href="watch-screen/watch-screen.css">          
