@@ -15,10 +15,11 @@ class WatchTime extends HTMLElement {
 
   connectedCallback() {
     this.colon = this.shadowRoot.querySelectorAll(".colon");   //querySelectorAll devuelve un array, por lo que hay que leerlo como una lista con un forEach, si no, no funca.  
-    //this.blink(this.colon);
-    //this.blinkAll(this.colon);
+    
+    this.blinkAll(this.colon);
     this.loadTime();
-    this.updateTime();   
+    this.updateTime();
+    this.shadowRoot.querySelector("#second")
   }  
 
   loadTime() {
@@ -39,7 +40,7 @@ class WatchTime extends HTMLElement {
   updateTime() {
     setInterval(() => {      
       this.loadTime();    
-    }, 1000);  
+    }, 1000);
   }
 
   blinkAll(selectors) {

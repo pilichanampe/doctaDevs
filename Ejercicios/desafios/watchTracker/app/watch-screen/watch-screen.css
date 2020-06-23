@@ -34,13 +34,14 @@
     border-bottom-color: transparent;
     border-left-color: transparent;
     animation: rotate 1s infinite;
+    transform: rotate(-45deg);
 }
 
 @keyframes rotate {
     0% {
-      transform: rotate(0deg);
+      transform: rotate(-45deg);
     }
     100% {
-      transform: rotate(359deg);
+      transform: rotate(313deg);
     }
 }

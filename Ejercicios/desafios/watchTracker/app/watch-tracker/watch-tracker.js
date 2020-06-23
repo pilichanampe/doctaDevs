@@ -5,7 +5,7 @@ class WatchTracker extends HTMLElement {
     }
 
     connectedCallback() {      
-      this.updateTracker(60);      
+      this.updateTracker(200);      
     }
 
     //actualizo el ritmo cardíaco

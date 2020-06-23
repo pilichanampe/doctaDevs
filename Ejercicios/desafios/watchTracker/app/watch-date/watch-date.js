@@ -6,11 +6,13 @@ class WatchDate extends HTMLElement {
 
   connectedCallback() {
     this.loadDate();
+    this.updateDate();
   }
 
   loadDate() {
     const date = new Date();
     const day = date.getDay();
+    const hour = date.getMinutes();
     const dateDay = date.getDate();
     const month = date.getMonth();
     const year = date.getFullYear();
@@ -21,7 +23,7 @@ class WatchDate extends HTMLElement {
 
     const months = ["Enero", "Febrero", "Marzo", "Abril" ,"Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
     const nameMonth = months[month].slice(0, 3).toUpperCase();
-
+    console.log(date);
 
     //Actualizo el Shadow DOM
     this.shadowRoot.querySelector('p').innerHTML = nameDay + " " + dateDay + " " + nameMonth + " " + year;

@@ -11,6 +11,7 @@ img {
   width: 20px;
   height: 20px;
   animation: blink 1s infinite;
+  padding: 2px;
   /*border: 2px solid green;  */
 }
 
@@ -24,7 +25,7 @@ img {
 }
 
 #bpm {
-  padding-left: 5px;  
+  padding: 2px;  
   flex: 1;
   
 }
