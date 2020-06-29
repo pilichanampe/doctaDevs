@@ -18,7 +18,7 @@ class WatchTime extends HTMLElement {
     
     this.blinkAll(this.colon);
     this.loadTime();
-    //this.updateTime();
+    this.updateTime();
     this.shadowRoot.querySelector("#second")
   }  
 
@@ -50,16 +50,19 @@ class WatchTime extends HTMLElement {
         Capaz que el problema no está en estas funciones y lo tengo en otro lado,
         pero no se me ocurre dónde.
     */
-   setTimeout(() => {      
+
+   /*
+    setTimeout(() => {      
       this.loadTime();    
-    }, 1);   
+    }, 1);
+  */
   }
 
-  /*updateTime() {
+  updateTime() {
     setInterval(() => {      
       this.loadTime();    
     }, 1000);
-  }*/
+  }
 
   //Function that makes the colons blink. In an optimized design, it's too much visual information having two blinking colons when the seconds appear as numbers.
     blinkAll(selectors) {
@@ -91,37 +94,3 @@ window.customElements.define("watch-time", WatchTime);
 
 
 
-
-
-
-
-/*function currentTime() {
-    const date = new Date(); /* creating object of Date class 
-    let hour = date.getHours();
-    let min = date.getMinutes();
-    var sec = date.getSeconds();
-    const colon = document.querySelector("#colon");  
-    
-    hour = updateTime(hour);
-    min = updateTime(min);
-  
-    const blinkColon = colon.style.animation = "blink 1s infinite";
-    
-    document.querySelector("#hour").innerText = hour;  
-    document.querySelector("#minute").innerText = min;
-    
-    var t = setTimeout(function(){            
-              currentTime();             
-      }, 1000); /* setting timer 
-  }
-  
-  function updateTime(number) {
-    if (number < 10) {
-      return "0" + number;
-    }
-    else {
-      return number;
-    }
-  }
-  
-  currentTime(); // calling currentTime() function to initiate the process */

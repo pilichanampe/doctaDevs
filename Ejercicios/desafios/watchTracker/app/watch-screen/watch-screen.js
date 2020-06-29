@@ -6,7 +6,7 @@ class WatchScreen extends HTMLElement {
 
   connectedCallback() {
     //Disables the turning border
-    this.shadowRoot.querySelector(".turning-border").style.animation = "none";
+    //this.shadowRoot.querySelector(".turning-border").style.animation = "none";
     
   }
 }
