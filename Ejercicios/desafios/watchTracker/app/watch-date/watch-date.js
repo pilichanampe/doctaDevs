@@ -19,13 +19,13 @@ class WatchDate extends HTMLElement {
 
     const days = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
     const nameDay = days[day].slice(0, 3).toUpperCase();
-    console.log(nameDay);
+    //console.log(nameDay);
 
     const months = ["Enero", "Febrero", "Marzo", "Abril" ,"Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
     const nameMonth = months[month].slice(0, 3).toUpperCase();
-    console.log(date);
+    //console.log(date);
 
-    //Actualizo el Shadow DOM
+    //Updates the Shadow DOM
     this.shadowRoot.querySelector('p').innerHTML = nameDay + " " + dateDay + " " + nameMonth + " " + year;
   }
 
