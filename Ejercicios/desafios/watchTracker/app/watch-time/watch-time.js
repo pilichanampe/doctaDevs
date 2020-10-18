@@ -18,8 +18,8 @@ class WatchTime extends HTMLElement {
     
     this.blinkAll(this.colon);
     this.loadTime();
-    this.updateTime();
-    this.shadowRoot.querySelector("#second")
+    //this.updateTime();
+    //this.shadowRoot.querySelector("#second")
   }  
 
   loadTime() {
@@ -51,11 +51,11 @@ class WatchTime extends HTMLElement {
         pero no se me ocurre dónde.
     */
 
-   /*
+  
     setTimeout(() => {      
       this.loadTime();    
-    }, 1);
-  */
+    }, 1000);
+  
   }
 
   updateTime() {
